@@ -3,15 +3,22 @@
 # Md Lutfar Rahman
 # mrahman9@memphis.edu
 
-
+# input: text-string
+# splits word from a text-string
+# output: list of splitted word-string
 def word_splitter(text):
 	separators = [',','.','-','"','\n']
 	for sep in separators:
 		text = text.replace(sep,'')
 	words = text.split(' ')
-	words.remove('')
+
+	if '' in words:
+		words.remove('')
 	return words
 
+# input: text-string
+# counts frequncy of words in the text
+# output: dict of word and its frequency
 def word_count(text):
 	words_count_dict = {}
 	words = word_splitter(text)
@@ -24,14 +31,16 @@ def word_count(text):
 
 	return words_count_dict
 
+# input: dict of word and its frequency 
+# output: list of top ten frequent words
 def get_topten(words_count_dict):
 	return sorted(words_count_dict, key=words_count_dict.__getitem__, reverse=True)[0:10]
 
-
+# show result as word -> frequency
 def show_result(topten, words_count_dict):
-	print("word frequency")
+	print("word -> frequency")
 	for word in topten:
-		print(word,words_count_dict[word])
+		print('%s -> %s' % (word,words_count_dict[word],) )
 
 
 if __name__ == "__main__":
