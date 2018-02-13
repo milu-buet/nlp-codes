@@ -47,6 +47,7 @@ def runTask_i():
 	data = getBROWN()
 	sentences = getSentences(data)
 	saveSentencesToBrownClean(sentences)
+	print(sentences)
 # -------------------------------------------------------
 
 
@@ -103,14 +104,30 @@ def runTask_iii():
 def getMostFrequentTag():
 	return get20FrequentTags()[0]
 
-def tagWithMostFrequent():
-	tag,word,freq = getMostFrequentTag()
+def tagMostFrequent():
+	tag_most,word,freq = getMostFrequentTag()
+	#print(tag_most,word,freq)
+	with open(browncleanfile, 'r') as myfile:
+		for sentence in myfile:
+			tag_words = sentence.strip('\n').split(' ')
+			new_tagged_sentence = ''
+			for i in range(0, len(tag_words),2):
+				tag = tag_words[i]
+				word = tag_words[i+1]
+				
+				new_tagged_sentence += '%s/%s '%(word,tag_most)
 
-def runTask_iv():
-	tagWithMostFrequent()
+			print(new_tagged_sentence)
 	
 
+
+def runTask_iv():
+	tagMostFrequent()
+	
 #---------------------------------------------------
 
-
-runTask_iv()
+if __name__ == "__main__":
+	runTask_i()
+	#runTask_ii()
+	#runTask_iii()
+	#runTask_iv()
