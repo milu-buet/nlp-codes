@@ -19,7 +19,7 @@ def getBROWN():
 
 
 def getSentences(data):
-	pattern = "\((\w)+ (\')*(\w)+\)"
+	pattern = "\((\w|\$|\.\-)+ (\w|\.|\]|\[|\'|\-)+\)"
 	sentences = []
 	sentence = ''
 	for x in re.finditer(pattern, data):
@@ -29,6 +29,7 @@ def getSentences(data):
 			sentence = ''
 		else:
 			sentence += word[1:-1] + ' '
+	sentences.append(sentence.strip(' '))
 
 	while('' in sentences):
 		sentences.remove('')
@@ -76,6 +77,7 @@ def createHashofHashes():
 
 def runTask_ii():
 	HashOfHash = createHashofHashes()
+	print("HashOfHashes:")
 	print(HashOfHash)
 #-------------------------------------------------------
 
@@ -88,46 +90,60 @@ def get20FrequentTags():
 	word_tag = {}
 	for word,tag_freq in HashOfHash.items():
 		for tag,freq in tag_freq.items():
-			word_tag[tag,word,freq] = freq
-	return sorted(word_tag, key=word_tag.__getitem__, reverse=True)[0:20]
+			if tag not in word_tag:
+				word_tag[tag] = 0
+			word_tag[tag]+= freq
+	return sorted(word_tag, key=word_tag.__getitem__, reverse=True)[0:20],word_tag
 
 
 def runTask_iii():
-	frequent_tags = get20FrequentTags()
-	print(frequent_tags)
+	frequent_tags,word_tag = get20FrequentTags()
+	print("Top 20 tags:")
+	for tag in frequent_tags:
+	 	print("%s: %s, "%(tag,word_tag[tag]))
 
 
 #--------------------------------
 
 #code for task_iv
 #---------------------------------------------------
-def getMostFrequentTag():
-	return get20FrequentTags()[0]
 
-def tagMostFrequent():
-	tag_most,word,freq = getMostFrequentTag()
-	#print(tag_most,word,freq)
-	with open(browncleanfile, 'r') as myfile:
-		for sentence in myfile:
-			tag_words = sentence.strip('\n').split(' ')
-			new_tagged_sentence = ''
-			for i in range(0, len(tag_words),2):
-				tag = tag_words[i]
-				word = tag_words[i+1]
-				
-				new_tagged_sentence += '%s/%s '%(word,tag_most)
+def evaluateTagging():
+	HashOfHash = createHashofHashes()
+	count = 0
+	correct = 0
+	cc = 0
+	for word in HashOfHash:
+		# if word == 'grand':
+		# 	print(word,HashOfHash[word])
+		tag_freqs = HashOfHash[word]
+		frequent_tag = sorted(tag_freqs, key=tag_freqs.__getitem__, reverse=True)[0]
+		#print(word,frequent_tag)
+		for tag in tag_freqs:
+			count+=tag_freqs[tag]
+			if tag != frequent_tag:
+				#print(word,tag,tag_freqs[tag])
+				cc += tag_freqs[tag]
 
-			print(new_tagged_sentence)
+		correct+=tag_freqs[frequent_tag]
+
+
+	accuracy = correct/count
+	print("accuracy=%s"%(accuracy,))
+
 	
-
-
 def runTask_iv():
-	tagMostFrequent()
-	
-#---------------------------------------------------
+	evaluateTagging()
+
+
+
+
+#----------------------------------------------------
 
 if __name__ == "__main__":
-	runTask_i()
-	#runTask_ii()
-	#runTask_iii()
-	#runTask_iv()
+	#runTask_i()
+	runTask_ii()
+	runTask_iii()
+	runTask_iv()
+
+	
