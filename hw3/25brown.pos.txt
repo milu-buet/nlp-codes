@@ -1,0 +1,791 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was) (RB n't)
+        (ADVP (RB exactly))
+        (NP (DT a) (NN whimper))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT neither))
+      (VP (VBD was)
+        (NP (PRP it))
+        (ADVP (RB much)
+          (PP (IN of)
+            (NP (DT a) (NN bang))))))
+    (. .)))
+
+(ROOT
+  (SINV
+    (ADVP (RB Perhaps))
+    (ADJP (JJ low-key))
+    (VP (VBZ is)
+      (NP (DT the) (JJS best) (NN way))
+      (S
+        (VP (TO to)
+          (VP (VB describe)))))
+    (NP
+      (NP (DT the) (VBG opening) (NN day))
+      (PP (IN of)
+        (NP (DT the) (NN series)))
+      (PP (IN at)
+        (NP (NNP Kingsmead))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Durbanites))
+      (VP (VBD did) (RB n't)
+        (VP (VB flock)
+          (PP (TO to)
+            (NP (DT the) (NN venue))))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP
+            (NP (DT the) (JJ vast) (NN majority))
+            (PP (IN of)
+              (NP (DT the) (NN city))))
+          (VP (VBD missed))))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN couple))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (NNS half-centuries))
+                (PP (IN from)
+                  (NP (NNP Steven) (NNP Smith))))
+              (CC and)
+              (NP
+                (NP (NNP David) (NNP Warner))
+                (, ,)
+                (NP (DT a) (JJ few) (JJ fifty) (NNS partnerships))
+                (, ,)
+                (NP (CD five) (NNS wickets))
+                (, ,)
+                (CC and)
+                (NP (DT a) (NN day)))))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD was)
+                (VP (VBN shortened)
+                  (PP (IN by)
+                    (NP
+                      (NP (CD 14) (NNS overs))
+                      (ADJP (JJ due)
+                        (PP (TO to)
+                          (NP (JJ bad) (NN light)))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP (DT a) (NN day))
+      (PP (IN without)
+        (NP (DT a) (JJ runaway) (NN winner)))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (NNP South) (NNP Africa))
+          (VP (MD will)
+            (ADVP (RB probably))
+            (VP (VB go)
+              (PP (TO to)
+                (NP
+                  (NP (NN bed))
+                  (ADJP (RB slightly) (JJR happier)))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (NNP Play))
+    (VP (VBD ended)
+      (PP (IN with)
+        (NP
+          (NP (NNP Australia))
+          (PP (IN on)
+            (NP (CD 225)))))
+      (PP (IN for)
+        (NP (CD 5)))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNP Mitchell) (NNP Marsh))
+            (PP (IN on)
+              (NP (CD 32))))
+          (CC and)
+          (NP
+            (NP (NNP Tim) (NNP Paine))
+            (PP (IN on)
+              (NP (CD 21)))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (PP (IN Like)
+        (NP
+          (NP (JJS most))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNPS Australians))
+              (PP (IN before)
+                (NP (PRP them)))))))
+      (, ,)
+      (NP (PRP they))
+      (VP (VBD had)
+        (VP (VBN made)
+          (NP (NNS starts)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NN nobody))
+      (ADVP (RB yet))
+      (VP (VBD managed)
+        (S
+          (VP (TO to)
+            (VP (VB push)
+              (PRT (RP on))
+              (PP (TO to)
+                (NP (DT an) (JJ influential) (NN score))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP South) (NNP Africa) (POS 's))
+        (NN bowling))
+      (VP (VBD was)
+        (ADJP (JJ consistent)
+          (CC and)
+          (JJ admirable))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBD were)
+        (NP
+          (NP
+            (NP
+              (NP (CD two) (NNS wickets))
+              (NP (DT each)))
+            (PP (IN for)
+              (NP
+                (NP (NNP Vernon) (NNP Philander))
+                (CC and)
+                (NP (NNP Keshav) (NNP Maharaj)))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (CD one))
+            (PP (TO to)
+              (NP (NNP Kagiso) (NNP Rabada)))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (PRP$ Their) (NN catching))
+    (VP (VBD was)
+      (ADJP (JJ sharp))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (PRP$ their) (NN reviewing))
+          (VP (VBD was)
+            (ADJP (JJ awful))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Having)
+        (VP (VBN lost)
+          (NP (DT the) (NN toss)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (JJ comfortable)
+          (PP (IN with)
+            (NP (PRP$ their) (NN position))))))
+    (. .)))
+
+(ROOT
+  (S
+    (ADVP (RBS Most) (RB notably))
+    (PP (IN for)
+      (NP (NNP South) (NNP Africa)))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD prevented)
+      (NP (NNP Warner)
+        (CC and)
+        (NNP Smith))
+      (PP (IN from)
+        (S
+          (ADVP (RB really))
+          (VP (VBG getting)
+            (PRT (RP away))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Smith))
+      (VP (VBD brought)
+        (PRT (RP up))
+        (NP
+          (NP (PRP$ his) (JJ fifth) (JJ consecutive) (NN score))
+          (PP (IN of)
+            (NP (NNS fifty-plus))))
+        (PP (IN in)
+          (NP (NNP Tests)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Warner))
+      (VP (VBD shook)
+        (PRT (RP off))
+        (NP
+          (NP (PRP$ his) (JJ recent) (NN struggles))
+          (PP (IN against)
+            (NP (DT the) (JJ white) (NN ball))))
+        (S
+          (VP (TO to)
+            (VP (VB extend)
+              (NP
+                (NP (PRP$ his) (NN run))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ fifty-plus) (JJ Test) (NNS scores))
+                    (PP (IN in)
+                      (NP (NNP South) (NNP Africa))))))
+              (PP (TO to)
+                (NP (CD six))))))))
+    (. .)))
+
+(ROOT
+  (S (CC But)
+    (PP (IN like)
+      (NP
+        (NP (DT a) (NN pair))
+        (PP (IN of)
+          (NP (JJ rockabilly) (NNS tragics)))))
+    (, ,)
+    (NP (PRP they))
+    (DT both)
+    (VP (VBD got)
+      (VP (VBN stuck)
+        (PP (IN in)
+          (NP (DT the) (NNS fifties)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (NNP Philander))
+    (VP (VBD snared)
+      (NP
+        (NP (NNP Warner))
+        (PP (IN for)
+          (NP (CD 51))))
+      (PP (IN with)
+        (NP (DT the) (JJ final) (NN ball)))
+      (PP (IN before)
+        (NP (NN lunch)))
+      (S
+        (VP (TO to)
+          (VP (VB leave)
+            (NP (NNP Australia) (NN three-down))
+            (PP (IN at)
+              (NP (DT the) (JJ long) (NN break))))))
+      (, ,)
+      (S
+        (VP (VBG having)
+          (ADVP (RB already))
+          (VP (VBN lost)
+            (NP
+              (NP (NNP Cameron) (NNP Bancroft))
+              (CC and)
+              (NP (NNP Usman) (NNP Khawaja)))
+            (ADVP (RB cheaply))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (S
+        (NP (NNP Warner))
+        (VP (VBD fell)
+          (PP (TO to)
+            (NP (DT an) (JJ excellent) (NN catch)))
+          (PP (IN from)
+            (NP
+              (NP (NNP AB) (IN de) (NNP Villiers))
+              (PP (IN at)
+                (NP (JJ second) (NN slip)))))))
+      (CC and)
+      (S
+        (NP (PRP it))
+        (VP (VBD was)
+          (NP (DT the) (JJ second) (JJ brilliant) (NN take))
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NNP South) (NNPS Africans))
+              (PP (IN in)
+                (NP (DT the) (NN session))))))))
+    (: -)
+    (S
+      (NP (NNP Quinton) (FW de) (NNP Kock))
+      (VP (VBD had)
+        (VP (VBN dived)
+          (PP (TO to)
+            (NP (PRP$ his) (NN left)
+              (S
+                (VP (TO to)
+                  (VP (VB pouch)
+                    (NP (DT a) (JJ tough) (NN chance))
+                    (S
+                      (VP (TO to)
+                        (VP (VB remove)
+                          (NP
+                            (NP (NNP Khawaja))
+                            (PP (IN for)
+                              (NP (CD 14))))
+                          (SBAR
+                            (WHADVP (WRB when))
+                            (S
+                              (NP (NNP Rabada))
+                              (VP (VBD nibbled)
+                                (PP
+                                  (ADVP
+                                    (NP (CD one))
+                                    (RB away))
+                                  (IN in)
+                                  (NP (PRP$ his) (JJ first)))
+                                (PP (IN over))))))))))))))))
+    (. .)))
+
+    (ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (RB just) (DT a) (JJ single) (NN wicket))
+        (VP (VBD fell)
+          (PP (IN in)
+            (NP (DT the) (JJ next) (NN session))))))
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP
+        (NP (RB arguably) (RB as) (JJ valuable))
+        (PP (IN as)
+          (NP (DT the) (CD three)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD fell)
+              (PP (IN before)
+                (NP (NN lunch)))
+              (, ,)
+              (SBAR (IN for)
+                (S
+                  (NP (PRP it))
+                  (VP (VBD was)
+                    (NP
+                      (NP
+                        (NP (DT that))
+                        (PP (IN of)
+                          (NP (NNP Smith))))
+                      (, ,)
+                      (NP
+                        (NP (DT the) (JJS best) (JJ Test) (NN batsman))
+                        (PP (IN in)
+                          (NP (DT the) (NN world))))
+                      (CC and)
+                      (NP
+                        (NP (DT the) (NN man))
+                        (SBAR
+                          (WHPP (TO to)
+                            (WHNP (WP whom)))
+                          (S
+                            (NP (NNP Australia))
+                            (VP (VBP look)
+                              (PP (IN for)
+                                (NP (NN stability))))))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (CD 56)))
+    (, ,)
+    (NP (NNP Smith))
+    (VP
+      (VP (VBD edged)
+        (NP (CD one))
+        (PRT (RP off))
+        (NP
+          (NP (DT the) (NN spin))
+          (PP (IN of)
+            (NP (NNP Maharaj)))))
+      (CC and)
+      (VP (VBD saw)
+        (S
+          (NP (DT the) (NN ball))
+          (VP
+            (VP (VB ricochet)
+              (PRT (RP off))
+              (NP
+                (NP (DT the) (NN wicketkeeper))
+                (IN de)
+                (NP (NNP Kock))))
+            (CC and)
+            (VP (VB lob)
+              (PRT (RP up))
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP
+                      (ADVP (RB easily))
+                      (VBN grabbed)
+                      (PP (IN by)
+                        (NP
+                          (NP (NNP de) (NNP Villiers))
+                          (PP (IN at)
+                            (NP (NN slip))))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD left)
+        (NP (NNP Australia))
+        (PP (IN at)
+          (NP (NNP 151)))
+        (PP (IN for)
+          (NP (CD 4)))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP
+        (NP
+          (QP (JJR less) (IN than) (CD ten))
+          (NNS overs))
+        (RB later))
+      (NP (NNP Maharaj))
+      (VP (VBD added)
+        (NP
+          (NP (NNP Shaun) (NNP Marsh))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (ADVP (RB limply))
+              (VP
+                (VP (VBD pushed)
+                  (ADVP (IN outside) (RB off)))
+                (CC and)
+                (VP (VBD edged)
+                  (PRT (RP behind))
+                  (PP (IN for)
+                    (NP (CD 40))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (DT no) (NN shortage))
+        (PP (IN of)
+          (NP
+            (NP (NN action))
+            (PP (IN in)
+              (NP (DT the) (NN opening) (NN session))))))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (NNP South) (NNP Africa))
+          (PP (RB out) (IN of)
+            (NP
+              (NP (NNS reviews))
+              (PP (IN by)
+                (NP (DT the) (NN 11th) (IN over))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD wasted)
+        (NP (PRP$ their) (JJ first))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ third) (NN ball))
+            (PP (IN of)
+              (NP (DT the) (NN Test)))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP
+                (NP (NNP Morne) (NNP Morkel) (POS 's))
+                (NN delivery))
+              (PP (TO to)
+                (NP (NNP Bancroft))))
+            (VP (VBD was)
+              (VP (VBN shown)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (DT both) (JJ high)
+                        (CC and)
+                        (JJ wide))
+                      (PP (IN of)
+                        (NP (NN leg) (NN stump))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (JJ second) (NN review))
+      (VP (VBD disappeared)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP (NNP Maharaj) (POS 's))
+              (JJ first) (NN ball))
+            (VP (VBD spun)
+              (ADVP (RB sharply))
+              (PP (IN in)
+                (FRAG
+                  (PP (TO to)
+                    (NP (NNP Warner)))
+                  (: -)
+                  (ADVP (RB too) (RB sharply))))
+              (, ,)
+              (SBAR (IN for)
+                (S
+                  (NP (PRP it))
+                  (VP (MD would)
+                    (VP (VB have)
+                      (VP (VBN missed)
+                        (NP (NN leg) (NN stump))
+                        (ADVP (RB comfortably))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD were)
+        (NP
+          (ADJP (RB potentially) (JJ costly))
+          (NNS errors))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP South) (NNP Africa))
+      (ADVP (RB later))
+      (VP (MD could)
+        (VP (VB have)
+          (VP (VBN had)
+            (NP
+              (NP (NNP Shaun) (NNP Marsh) (NNP lbw))
+              (PP (IN on)
+                (NP (CD 19))))
+            (SBAR (IN if)
+              (S
+                (NP (PRP they))
+                (VP (VBD had)
+                  (NP
+                    (NP (DT a) (NN review))
+                    (VP (VBN left)
+                      (PP (IN in)
+                        (NP (DT the) (NN bank))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Rabada))
+      (VP
+        (VP
+          (VP (VBD fired)
+            (NP (CD one))
+            (PP (IN in)
+              (PP (IN from)
+                (PP (IN around)
+                  (NP (DT the) (NN wicket))))))
+          (CC and)
+          (VP (VBD struck)
+            (S
+              (NP (NNP Marsh))
+              (ADJP (JJ low)))))
+        (CC but)
+        (VP (VBD was)
+          (VP (VBN given)
+            (ADVP (RB not) (RB out))
+            (PP (IN on)
+              (NP (NN field)))))))
+    (: ;)
+    (S
+      (NP (NN ball-tracking))
+      (VP (VBD showed)
+        (NP
+          (NP (DT the) (NN delivery))
+          (VP (VBG cannoning)
+            (PP (IN into)
+              (NP (NN leg) (NN stump)))))))
+    (. .)))
+
+(ROOT
+  (S
+    (SBAR (IN That)
+      (S
+        (NP (PRP they))
+        (VP (VBD picked)
+          (PRT (RP up))
+          (NP (NNP Marsh))
+          (SBAR (IN before)
+            (S
+              (NP (PRP he))
+              (VP (VBD did)
+                (NP
+                  (ADJP (RB too) (JJ much))
+                  (JJ further) (NN damage))))))))
+    (VP (MD must)
+      (VP (VB have)
+        (VP (VBN been)
+          (NP (DT a) (NN relief)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (RB only) (JJ Australian))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD failed)
+            (S
+              (VP (TO to)
+                (VP (VB reach)
+                  (NP (JJ double) (NNS figures)))))))))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Bancroft))
+        (, ,)
+        (SBAR
+          (WHNP
+            (NP (WP$ whose) (NN place))
+            (PP (IN in)
+              (NP (DT the) (JJ Test) (NN side))))
+          (S
+            (VP (VBZ becomes)
+              (NP (JJR more) (NNS tenuous))
+              (PP (IN with)
+                (NP (DT each) (NN failure))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (NNP Bancroft))
+    (VP (VBD took)
+      (NP (DT the) (JJ strange) (NN decision))
+      (S
+        (VP (TO to)
+          (VP (VB walk)
+            (PRT (RP across))
+            (NP (PRP$ his) (NNS stumps))
+            (PP (IN against)
+              (NP
+                (NP (DT the) (JJ second) (NN ball))
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP
+                      (VP (VBD faced)
+                        (PP (IN from)
+                          (NP (NNP Philander))))
+                      (CC and)
+                      (VP (VBD edged)
+                        (PRT (RP behind))
+                        (PP (IN for)
+                          (NP
+                            (NP (CD 5))
+                            (, ,)
+                            (NP
+                              (NP (DT the) (NN manner))
+                              (PP (IN of)
+                                (NP (PRP$ his) (NN dismissal))))))
+                        (ADVP (RB hardly))))))
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (MD might)
+                      (VP (VB have)
+                        (VP (VBN been)
+                          (VP (VBN expected)
+                            (PP (IN of)
+                              (NP
+                                (NP (DT a) (NN man))
+                                (VP (VBN noted)
+                                  (PP (IN for)
+                                    (NP (NN patience))))))))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (PP (IN By)
+      (NP
+        (NP (DT the) (NN close))
+        (PP (IN of)
+          (NP (NN play)))))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (PP (IN of)
+        (NP (PRP$ his) (JJ batting) (NNS colleagues))))
+    (VP (VBD had)
+      (VP (VBN made)
+        (NP (JJR better) (NNS starts))
+        (, ,)
+        (SBAR (IN though)
+          (S
+            (NP
+              (NP (NNP Australia) (POS 's))
+              (NN position))
+            (VP (VBD was) (RB not)
+              (ADJP (RB especially) (JJ strong)))))))
+    (. .)))
+
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (DT an) (VBN understated) (NN day))
+        (PP (IN of)
+          (NP (JJ Test) (NN cricket)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NNS hosts))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB narrowly))
+            (VP (VBD took)
+              (NP (DT the) (NNS honours)))))))
+    (. .)))
