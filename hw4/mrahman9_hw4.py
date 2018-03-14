@@ -81,15 +81,82 @@ def getSentenceTrees(brownfile):
 
 	return sentences
 
+def getAllRules(sentences,WithNONTerminal):
+	AllRules = []
+	for sentence in sentences:
+		rules = sentence.getRulesExceptRoot(WithNONTerminal)
+		#print(len(rules))
+		AllRules.extend(rules)
+	return AllRules
 
 
-				
+def getDistinctRulesCount(AllRules):
+	distinctRules = set(AllRules)
+	return len(distinctRules)
+
+def getFrequentRules(AllRules):
+	Rules_count = {}
+	for rule in AllRules:
+		if rule in Rules_count:
+			Rules_count[rule]+=1
+		else:
+			Rules_count[rule]=1
+
+	frequentRules = sorted(Rules_count, key=Rules_count.__getitem__, reverse=True)[0:10]
+	frequentRulesCount = []
+
+	for frequentRule in frequentRules:
+		frequentRulesCount.append((frequentRule, Rules_count[frequentRule])) 
+	
+	return frequentRulesCount
+
+def getMostDiverse(sentences):
+	TagRule = {}
+	for sentence in sentences:
+		sentence.getRulesByTagExceptRoot(TagRule)
+
+	TagRuleCount = {}
+	for tag in TagRule:
+		TagRuleCount[tag] = len(set(TagRule[tag]))
+
+	mostDiverseTag = sorted(TagRuleCount, key=TagRuleCount.__getitem__, reverse=True)[0]
+	
+	#print(mostDiverseTag,TagRuleCount[mostDiverseTag])
+	#print(TagRuleCount)
+
+	return mostDiverseTag,TagRuleCount[mostDiverseTag]
 
 
 
 
-a = getSentenceTrees(Snapshotbrownfile)
-a[1].printExceptRoot()
+def runTask_i(brown):
+	sentences = getSentenceTrees(brown)
+	sentences = sentences[1:len(sentences)]
+	
+	AllRules = getAllRules(sentences,True)
+	distinctRules = getDistinctRulesCount(AllRules)
+	print('Distinct rules = %s'% (distinctRules,))
+
+	AllRulesWithOutNONTerminal = getAllRules(sentences,False)
+	frequentRules = getFrequentRules(AllRulesWithOutNONTerminal)
+	print('Ten frequent rules:')
+	print(frequentRules)	
+
+	print('Most diverse non-terminal:')
+	mostDiverseTag = getMostDiverse(sentences)	
+	print(mostDiverseTag)		
+
+
+
+def runTask_ii(brown):
+	pass
+ 
+
+brown =  brownfile
+brown = Snapshotbrownfile
+runTask_i(brown)
+
+
 print("ended")
 
 
