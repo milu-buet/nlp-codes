@@ -13,6 +13,8 @@ browncleanfile = 'BROWN-clean.pos.txt'
 Snapshotbrownfile = 'SnapshotBROWN.pos.all.txt'
 Snapshotbrowncleanfile = 'SnapshotBROWN-clean.pos.txt'
 
+brown =  brownfile
+
 
 def getTags(line):
 	free_tags = line.replace('(',' ').replace(')',' ')
@@ -81,13 +83,15 @@ def getSentenceTrees(brownfile):
 
 	return sentences
 
-def getAllRules(sentences,WithNONTerminal):
+def getAllRules(sentences):
 	AllRules = []
+	AllTerminalRules = []
+	TagRule = {}
 	for sentence in sentences:
-		rules = sentence.getRulesExceptRoot(WithNONTerminal)
-		#print(len(rules))
+		rules,terminal_rules = sentence.getRulesExceptRoot(TagRule)
 		AllRules.extend(rules)
-	return AllRules
+		AllTerminalRules.extend(terminal_rules)
+	return AllRules,AllTerminalRules,TagRule
 
 
 def getDistinctRulesCount(AllRules):
@@ -110,54 +114,81 @@ def getFrequentRules(AllRules):
 	
 	return frequentRulesCount
 
-def getMostDiverse(sentences):
-	TagRule = {}
-	for sentence in sentences:
-		sentence.getRulesByTagExceptRoot(TagRule)
-
+def getMostDiverse(TagRule):
 	TagRuleCount = {}
 	for tag in TagRule:
 		TagRuleCount[tag] = len(set(TagRule[tag]))
 
 	mostDiverseTag = sorted(TagRuleCount, key=TagRuleCount.__getitem__, reverse=True)[0]
-	
-	#print(mostDiverseTag,TagRuleCount[mostDiverseTag])
-	#print(TagRuleCount)
 
 	return mostDiverseTag,TagRuleCount[mostDiverseTag]
 
-
-
-
-def runTask_i(brown):
+def extractBrown(brown):
 	sentences = getSentenceTrees(brown)
 	sentences = sentences[1:len(sentences)]
 	
-	AllRules = getAllRules(sentences,True)
+	AllRules,AllTerminalRules,TagRule = getAllRules(sentences)
+
+	return AllRules,AllTerminalRules,TagRule
+
+
+def createHashofHashes(browncleanfile):
+	HashOfHash = {}
+	with open(browncleanfile, 'r') as myfile:
+		for sentence in myfile:
+			tag_words = sentence.strip('\n').split(' ')
+			for i in range(0, len(tag_words),2):
+				tag = tag_words[i]
+				word = tag_words[i+1]
+				#print(word)
+
+				if word not in HashOfHash:
+					HashOfHash[word] = {}
+
+				if tag not in HashOfHash[word]:
+					HashOfHash[word][tag] = 0
+				
+				HashOfHash[word][tag]+=1
+	return HashOfHash
+
+def runTask_i():
+	AllRules,AllTerminalRules,TagRule = extractBrown(brown)
+
 	distinctRules = getDistinctRulesCount(AllRules)
 	print('Distinct rules = %s'% (distinctRules,))
 
-	AllRulesWithOutNONTerminal = getAllRules(sentences,False)
-	frequentRules = getFrequentRules(AllRulesWithOutNONTerminal)
+	frequentRules = getFrequentRules(AllTerminalRules)
 	print('Ten frequent rules:')
 	print(frequentRules)	
 
 	print('Most diverse non-terminal:')
-	mostDiverseTag = getMostDiverse(sentences)	
+	mostDiverseTag = getMostDiverse(TagRule)	
 	print(mostDiverseTag)		
 
 
 
-def runTask_ii(brown):
-	pass
- 
+def runTask_ii():
+	HashofHashes = createHashofHashes(browncleanfile)
+	rules = 0
+	for key in HashofHashes:
+		for tag in HashofHashes[key]:
+			rules +=1
+ 	
+	print("Extra rules for words=%s" % (rules,))
 
-brown =  brownfile
-brown = Snapshotbrownfile
-runTask_i(brown)
 
 
-print("ended")
+
+
+if __name__ == "__main__":
+	
+	#brown = Snapshotbrownfile
+	#browncleanfile = Snapshotbrowncleanfile
+
+	runTask_i()
+	runTask_ii()
+
+	print("ended")
 
 
 

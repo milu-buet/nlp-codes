@@ -56,51 +56,38 @@ class BrownNode(object):
 
 		#print('')
 
-	def getRulesExceptRoot(self, WithNONTerminal = True):
+	def getRulesExceptRoot(self,TagRule):
 		if len(self.children) > 0 and len(self.children[0].children) > 0:
-			return self.children[0].children[0].getRules(WithNONTerminal)
-		return []
+			return self.children[0].children[0].getRules(TagRule)
+		return [],[]
 
-	def getRules(self, WithNONTerminal = True):
+	def getRules(self,TagRule):
 		rules = []
+		terminal_rules = []
 		schild = ''
-		if(WithNONTerminal):
-			schild = '%s -> '%(self.tag)
+
 		for child in self.children:
 			if len(child.children) > 0:
-				#print('%s '%(child.tag),end='')
-				schild = schild + '%s '%(child.tag)
-
+					schild = schild + '%s '%(child.tag)
+			
 		schild = schild.strip()
+		non_terminla = '%s -> '%(self.tag)
 
-		rules.append(schild)
+		if len(self.children) > 0 and self.hasNonLeafNodes():
+			rules.append(non_terminla+schild)
+			terminal_rules.append(schild)
+
+			if self.tag not in TagRule:
+				TagRule[self.tag] = []
+			TagRule[self.tag].append(schild)
+
 		for child in self.children:
+			crules,cterminal_rules = child.getRules(TagRule)
 			if len(child.children) > 0 and child.hasNonLeafNodes():
-				crules = child.getRules(WithNONTerminal)
 				rules.extend(crules)
+				terminal_rules.extend(cterminal_rules)
 
-		return rules
-
-	def getRulesByTagExceptRoot(self,TagRule):
-		if len(self.children) > 0 and len(self.children[0].children) > 0:
-			self.children[0].children[0].getRulesByTag(TagRule)
-
-	def getRulesByTag(self,TagRule):
-		schild = ''
-		for child in self.children:
-			if len(child.children) > 0:
-				schild = schild + '%s '%(child.tag)
-		schild = schild.strip()
-
-		if self.tag not in TagRule:
-			TagRule[self.tag] = []
-		
-		TagRule[self.tag].append(schild)
-		for child in self.children:
-			if len(child.children) > 0 and child.hasNonLeafNodes():
-				child.getRulesByTag(TagRule)
-				
-
+		return rules,terminal_rules
 
 
 	def show(self):
